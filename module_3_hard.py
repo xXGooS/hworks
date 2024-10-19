@@ -16,7 +16,7 @@ def calculate_structure_sum(*args):
     return summa
 
 
-# Пример использования
+# Пример
 data_structure = [
     [1, 2, 3],
     {'a': 4, 'b': 5},
