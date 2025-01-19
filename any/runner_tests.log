@@ -1,0 +1,16 @@
+[2025-01-19 05:21:46,662] [WARNING]: Неверный тип данных для объекта Runner
+Traceback (most recent call last):
+  File "E:\Python\newprogress\1dz\tests_12_4.py", line 26, in test_run
+    runner = Runner(False, speed=10)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\newprogress\1dz\rt_with_exceptions.py", line 9, in __init__
+    raise TypeError(f'Имя может быть только строкой, передано {type(name).__name__}')
+TypeError: Имя может быть только строкой, передано bool
+[2025-01-19 05:21:46,662] [WARNING]: Неверная скорость для Runner
+Traceback (most recent call last):
+  File "E:\Python\newprogress\1dz\tests_12_4.py", line 14, in test_walk
+    runner = Runner("test", speed=-10)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\newprogress\1dz\rt_with_exceptions.py", line 14, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -10
