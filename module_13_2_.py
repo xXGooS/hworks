@@ -15,4 +15,9 @@ async def any_message(message):
     print("Введите команду /start, чтобы начать общение.")
 
 if __name__ == '__main__':
-    dp.start_polling(bot)
+    try:
+        async def start():
+            await dp.start_polling(bot)
+        asyncio.run(start())
+    except KeyboardInterrupt:
+        print('Бот прекратил свою работу.')
